@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=STIX+Two+Text&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #B0E0E6;
+  font-family: 'lato', san-sarif;
+  margin: 0;
+}
+
+header {
+  background-image: url("https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+header h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+header p {
+  font-size: 30px;
+  margin: 0;
+}
+header::after {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0.6;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+nav {
+  background-color: #A64253;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+}
+nav a:hover {
+  color: #00FFFF;
+  text-decoration: underline;-tile
+}
+section {
+  padding: 40px;
+  text-align: center;
+}
+section h2 {
+  margin: 0;
+}
+section p {
+  margin-top: 0;  
+  
+}
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  jusify-content: center;
+  align-items: center;
+  max-width: 820px;
+  margin: 20px auto 0;
+}
+.project-tile {
+  margin: 10px;
+  max-width: 250px;
+  text-decoration: none;
+}
+
+.project-tile img {
+  max-width: 100%;   
+}
+
+.project-tile p {
+  color: #000;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: transform 0.8s ease;
+}
+.project-tile:hover {
+  transform: scale(1.05); 
+}
+.social-section {
+  background-color: #B0E0E6;
+  color: #000;
+}
+.social-logos {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.social-logos a {
+  color: #000;
+  margin: 0 20px;
+  font-size: 23px;
+}
+
+footer {
+  background-color: #A64253;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 400px) {
+  section {
+    padding: 20px;
+  }
+}
